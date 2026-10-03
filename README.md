@@ -6,7 +6,7 @@ Plain static HTML, served by GitHub Pages from `main` / root. No build step.
 
 - `index.html`: the whole page (CSS and JS inline). The "stem in, pads out" graphic is real Rekit output: two bars of a whole-song extraction (notes from `result.json`, waveform peaks from the stem), embedded as `DATA` in the script.
 - `assets/device.jpg`: the device in Live.
-- Download: "Coming soon" for now; no release is published.
+- Buying: every "Buy" button links to the Gumroad product (https://sightsound.gumroad.com/l/rekit). The installer and the license keys are delivered by Gumroad, not hosted here.
 - `assets/compare.png`, `assets/rack.png`: optional screenshots. Each figure stays hidden until its image exists.
 
 Preview locally:
