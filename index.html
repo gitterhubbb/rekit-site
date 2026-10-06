@@ -546,8 +546,8 @@
       </div>
       <div class="feature">
         <div class="icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="7.5" stroke="currentColor" stroke-width="1.6"/><path d="M10 5.5V10l3 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
-        <h3>A whole song in half a minute</h3>
-        <p>Any length works, from one bar to the full track. A 6:44 song takes about 30 seconds on an M2 Max, and Live stays responsive while it runs.</p>
+        <h3>Any length, up to a whole song</h3>
+        <p>From one bar to the full track. Rekit takes its time to get the details right, so expect several minutes; it runs in the background at low priority, and you can keep working in Live.</p>
       </div>
     </div>
     <!-- Shown once assets/rack.png exists -->
@@ -634,7 +634,7 @@
       <div class="stat"><div class="v grad-text">0.90</div><p>F1 score on 20 loops across house, techno, hip-hop, trap and breaks</p></div>
       <div class="stat"><div class="v">1.7<small>ms</small></div><p>Average timing error of the extracted notes</p></div>
       <div class="stat"><div class="v">0.90</div><p>F1 on whole songs whose perc, rim or ride only come in late</p></div>
-      <div class="stat"><div class="v">~30<small>s</small></div><p>For a 6:44 song on an M2 Max. An 8-bar piece takes about 10&nbsp;s</p></div>
+      <div class="stat"><div class="v">0.80</div><p>F1 on whole songs with mix processing: a filtered intro, a reverb break, a low-pass build</p></div>
     </div>
     <p class="acc-note">For comparison, the open-source transcriber DrumScript 0.2.1 scores 0.36 F1 on the same 20 loops, with a 16&nbsp;ms timing error. Pads are matched to instruments optimally, so these numbers score the programming; naming is separate.</p>
   </div>
@@ -670,6 +670,10 @@
       <details>
         <summary>Where do the samples go?</summary>
         <p>Each run writes its one-shots, per-sound stems, <code>drums.mid</code> and the A/B resynthesis to <code>~/Music/Rekit/</code>. Use Collect All and Save to copy the samples into your project.</p>
+      </details>
+      <details>
+        <summary>How long does an extraction take?</summary>
+        <p>Several minutes, for a short clip or a whole song. Rekit learns every sound in the stem before it places a single note, and that thoroughness is where the accuracy comes from. The analysis runs in the background at low priority, so Live stays responsive and you can keep working. The status shows its progress, and Cancel stops it at any time.</p>
       </details>
       <details>
         <summary>Can I stop an extraction?</summary>
