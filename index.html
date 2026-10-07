@@ -264,14 +264,14 @@
   .compare td.us { color: var(--text); background: rgba(168, 107, 255, .05); }
   .compare td.us strong { color: #fff; }
   .compare-grid { display: grid; grid-template-columns: 280px minmax(0, 1fr); gap: 28px; align-items: start; }
-  .video { margin: 0; }
-  .video-frame {
+  .short { margin: 0; }
+  .short-frame {
     position: relative; aspect-ratio: 9 / 16; width: 100%; max-width: 100%;
     border-radius: 16px; overflow: hidden; background: #000;
     border: 1px solid var(--line-strong); box-shadow: 0 20px 60px rgba(0,0,0,.45), 0 0 0 1px rgba(168, 84, 247, .15);
   }
-  .video-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
-  .video figcaption { margin-top: 12px; font-size: 13px; color: var(--dim); }
+  .short-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .short figcaption { margin-top: 12px; font-size: 13px; color: var(--dim); }
   .compare-note { margin-top: 14px; font-size: 13px; color: var(--dim); }
   .shot { margin-top: 36px; }
   .shot img { width: 100%; border-radius: 12px; border: 1px solid var(--line-strong); box-shadow: 0 20px 60px rgba(0,0,0,.45); }
@@ -364,7 +364,7 @@
     .stats { grid-template-columns: 1fr 1fr; }
     .hood { grid-template-columns: 1fr; gap: 36px; }
     .compare-grid { grid-template-columns: 1fr; }
-    .video { width: min(100%, 320px); justify-self: center; }
+    .short { width: min(100%, 320px); justify-self: center; }
     .use-split, .option { grid-template-columns: 1fr; gap: 20px; }
   }
   @media (max-width: 620px) {
@@ -578,8 +578,8 @@
     </div>
 
     <div class="compare-grid">
-      <figure class="video">
-        <div class="video-frame">
+      <figure class="short">
+        <div class="short-frame">
           <iframe src="https://www.youtube-nocookie.com/embed/E1ct3uC7m5U?rel=0&amp;modestbranding=1&amp;playsinline=1" title="Drum stem, Convert Drums and Rekit compared" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
         </div>
         <figcaption>Hear it: the drum stem, then Convert Drums, then Rekit, then side by side. 24 seconds, sound on.</figcaption>
